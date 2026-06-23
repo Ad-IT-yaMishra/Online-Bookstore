@@ -93,14 +93,26 @@ h2 {
 }
 
 .navbar {
-    padding: 40px 0;
+    padding: 60px 20px;
     background-color: var(--bg-light);
+}
+
+.nav-container, .hero.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.hero.container{
+    padding: 60px 20px;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 20px;
 }
 
 .logo {
@@ -126,16 +138,45 @@ h2 {
     color: var(--primary);
 }
 
+.hero-title{
+    flex: 1.4;
+}
+
+.hero-title h1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+    white-space: nowrap;
+    font-size: 55px;
+}
+
+.hero-title .badge{
+    display: inline-block;
+    width: max-content;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 0 15px;
+    line-height: 1.5;
+}
+
 .hero {
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .hero-top {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
     margin-bottom: 40px;
+}
+
+.hero-info{
+    flex: 0.9;
+    padding-left: 20px;
 }
 
 .hero-info p {
@@ -251,6 +292,8 @@ h2 {
 
 .why-image img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
@@ -292,10 +335,18 @@ h2 {
     font-size: 0.9rem; margin: 0; 
 }
 
+.popular-courses{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 20px;
+}
 .courses-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    width: 100%;
 }
 
 .course-card{
@@ -478,13 +529,22 @@ h2 {
 }
 
 .testimonials {
-    padding: 60px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
 }
 
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
 }
 
 .testi-card {
@@ -520,13 +580,21 @@ h2 {
 .student-info span { font-size: 0.8rem; color: var(--text-light); }
 
 .teachers {
-    padding: 60px 0 100px; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box; 
 }
 
 .teacher-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .teacher-card {
@@ -534,6 +602,9 @@ h2 {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 .teacher-card img {
